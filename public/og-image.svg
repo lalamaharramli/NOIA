@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="NOIA — handmade crochet">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#FBF6EE" />
+      <stop offset="100%" stop-color="#EADBC8" />
+    </linearGradient>
+    <radialGradient id="glow" cx="30%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#5A4231" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+
+  <g transform="translate(860 330) scale(0.72)" filter="url(#softShadow)">
+    <g>
+      <circle r="338" fill="none" stroke="#A9714B" stroke-width="13" stroke-dasharray="11 9" stroke-linecap="round" opacity="0.9" />
+      <circle r="296" fill="none" stroke="#8C927A" stroke-width="7" stroke-dasharray="11 9" stroke-linecap="round" opacity="0.85" />
+      <circle r="254" fill="none" stroke="#E1C3B2" stroke-width="7" stroke-dasharray="11 9" stroke-linecap="round" opacity="0.85" />
+      <circle r="212" fill="none" stroke="#A9714B" stroke-width="7" stroke-dasharray="11 9" stroke-linecap="round" opacity="0.8" />
+      <circle r="170" fill="none" stroke="#8C927A" stroke-width="7" stroke-dasharray="11 9" stroke-linecap="round" opacity="0.75" />
+      <circle r="128" fill="none" stroke="#E1C3B2" stroke-width="7" stroke-dasharray="11 9" stroke-linecap="round" opacity="0.75" />
+      <circle r="104" fill="#F6EBDB" stroke="#A9714B" stroke-width="8" />
+      <polyline points="20,4 18,14 8,18 -3,14 -8,3 -3,-8 8,-12 21,-9 30,2 33,17 24,31 9,37 -7,33 -20,22 -26,5 -22,-14 -10,-29 7,-37 27,-36 43,-25 52,-7 53,14 43,34" fill="none" stroke="#A9714B" stroke-width="6" stroke-linecap="round" opacity="0.7" />
+      <path d="M 0 -338 q 30 -44 0 -82 q -30 38 0 82" fill="#E1C3B2" opacity="0.7" transform="rotate(15)" />
+      <path d="M 0 -338 q 30 -44 0 -82 q -30 38 0 82" fill="#E1C3B2" opacity="0.7" transform="rotate(135)" />
+      <path d="M 0 -338 q 30 -44 0 -82 q -30 38 0 82" fill="#E1C3B2" opacity="0.7" transform="rotate(255)" />
+    </g>
+  </g>
+
+  <g transform="translate(96 128)">
+    <rect width="46" height="2" fill="#A9714B" />
+    <text x="62" y="8" font-family="Segoe UI, Arial, sans-serif" font-size="16" letter-spacing="5" fill="#A9714B">HANDMADE CROCHET</text>
+  </g>
+
+  <text x="92" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="132" letter-spacing="18" fill="#26211D">NOIA</text>
+
+  <text x="96" y="392" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-style="italic" fill="#A9714B">Əl işi toxuculuq</text>
+
+  <path d="M 96 442 L 476 442" stroke="#DED3C3" stroke-width="1.5" />
+  <text x="96" y="486" font-family="Segoe UI, Arial, sans-serif" font-size="19" letter-spacing="1.5" fill="#57504A">Bags · Home textiles · Gifts · Custom pieces</text>
+  <text x="96" y="548" font-family="Segoe UI, Arial, sans-serif" font-size="18" letter-spacing="4" fill="#57504A" opacity="0.7">NOIA.AZ</text>
+</svg>

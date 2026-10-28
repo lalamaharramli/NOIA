@@ -1,0 +1,13 @@
+# Intentionally generated or external files
+node_modules
+dist
+coverage
+package-lock.json
+public/sitemap.xml
+
+# Binary artwork is generated or replaced by hand
+public/og-image.png
+
+# Documentation screenshots are captured manually
+docs/screenshots/*.png
+docs/screenshots/*.jpg

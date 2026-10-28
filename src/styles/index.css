@@ -1,0 +1,145 @@
+@import 'tailwindcss';
+
+/*
+ * ============================================================
+ *  NOIA design tokens
+ * ============================================================
+ * Colours and fonts are defined once here and become Tailwind
+ * classes automatically (bg-ivory, text-clay, font-serif, ...).
+ * Change a value below to restyle the whole site.
+ */
+@theme {
+  --font-sans: 'Manrope Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Lora Variable', ui-serif, Georgia, serif;
+
+  --color-ivory: #fbf8f3;
+  --color-cream: #f3ece2;
+  --color-sand: #e4d8c7;
+  --color-blush: #e7cfc3;
+  --color-clay: #8f5a36;
+  --color-sage: #8c9a85;
+  --color-ink: #26211d;
+  --color-ink-soft: #57504a;
+  /* Muted text that still meets WCAG AA (4.5:1) on ivory and cream. */
+  --color-ink-muted: #6f6761;
+  --color-line: #ded3c3;
+  --color-danger: #9a3b2e;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ivory font-sans text-ink-soft antialiased;
+  }
+
+  /* A very light paper grain. Kept subtle on purpose. */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    pointer-events: none;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif text-ink;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-clay);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: var(--color-blush);
+    color: var(--color-ink);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .skip-link {
+    position: absolute;
+    top: -4rem;
+    left: 1rem;
+    z-index: 70;
+    border-radius: 9999px;
+    background: var(--color-ink);
+    color: var(--color-ivory);
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
+    transition: top 0.2s ease;
+  }
+
+  .skip-link:focus {
+    top: 1rem;
+  }
+
+  /* Home page facts strip. The track is rendered twice for a seamless loop. */
+  .marquee-track {
+    animation: marquee 42s linear infinite;
+  }
+
+  .marquee:hover .marquee-track,
+  .marquee:focus-within .marquee-track {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none;
+      transform: none;
+    }
+  }
+
+  .rise {
+    animation: rise 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

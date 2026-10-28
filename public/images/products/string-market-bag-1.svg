@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img">
+  
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+        <stop offset="0%" stop-color="#F6EFE3" />
+        <stop offset="100%" stop-color="#E8DAC2" />
+      </linearGradient>
+      <radialGradient id="glow" cx="35%" cy="22%" r="70%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55" />
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="vignette" cx="50%" cy="50%" r="72%">
+        <stop offset="55%" stop-color="#6B4B33" stop-opacity="0" />
+        <stop offset="100%" stop-color="#6B4B33" stop-opacity="0.12" />
+      </radialGradient>
+      <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+        <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#5A4231" flood-opacity="0.18" />
+      </filter>
+      <filter id="grain">
+        <feTurbulence type="fractalNoise" baseFrequency="0.86" numOctaves="3" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.055" />
+        </feComponentTransfer>
+      </filter>
+    </defs>
+  <rect width="1000" height="1250" fill="url(#bg)" />
+  <rect width="1000" height="1250" fill="url(#glow)" />
+  <circle cx="500" cy="610" r="395" fill="#EFE5D2" opacity="0.35" />
+  <circle cx="500" cy="610" r="395" fill="none" stroke="#8C927A" stroke-width="1.5" opacity="0.18" stroke-dasharray="11 9" stroke-linecap="round" />
+  <g transform="translate(500 610) translate(0 0) scale(1)" filter="url(#softShadow)">
+    
+    <g>
+      <path d="M -178 -246 C -196 -420 196 -420 178 -246" fill="none" stroke="#5F5B44" stroke-width="12" stroke-dasharray="11 9" stroke-linecap="round" opacity="0.8" />
+      <clipPath id="marketBagClip">
+        <path d="M -226 -256 Q 0 -292 226 -256 L 268 208 Q 0 274 -268 208 Z" />
+      </clipPath>
+      <g clip-path="url(#marketBagClip)">
+        <rect x="-290" y="-300" width="580" height="600" fill="#EFE5D2" />
+        <path d="M -520 -280 L 40 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -520 280 L 40 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -478 -280 L 82 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -478 280 L 82 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -436 -280 L 124 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -436 280 L 124 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -394 -280 L 166 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -394 280 L 166 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -352 -280 L 208 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -352 280 L 208 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -310 -280 L 250 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -310 280 L 250 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -268 -280 L 292 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -268 280 L 292 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -226 -280 L 334 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -226 280 L 334 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -184 -280 L 376 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -184 280 L 376 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -142 -280 L 418 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -142 280 L 418 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -100 -280 L 460 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -100 280 L 460 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -58 -280 L 502 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -58 280 L 502 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -16 -280 L 544 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M -16 280 L 544 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 26 -280 L 586 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 26 280 L 586 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 68 -280 L 628 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 68 280 L 628 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 110 -280 L 670 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 110 280 L 670 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 152 -280 L 712 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 152 280 L 712 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 194 -280 L 754 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 194 280 L 754 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 236 -280 L 796 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 236 280 L 796 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 278 -280 L 838 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 278 280 L 838 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 320 -280 L 880 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 320 280 L 880 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 362 -280 L 922 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 362 280 L 922 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 404 -280 L 964 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 404 280 L 964 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 446 -280 L 1006 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 446 280 L 1006 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 488 -280 L 1048 280" stroke="#8C927A" stroke-width="5" opacity="0.55" /><path d="M 488 280 L 1048 -280" stroke="#8C927A" stroke-width="5" opacity="0.55" />
+        <path d="M -290 -30 Q 0 20 290 -30" fill="none" stroke="#B07B5E" stroke-width="18" opacity="0.45" />
+      </g>
+      <path d="M -226 -256 Q 0 -292 226 -256 L 268 208 Q 0 274 -268 208 Z" fill="none" stroke="#8C927A" stroke-width="9" />
+      <path d="M -220 -250 Q 0 -284 220 -250" fill="none" stroke="#C0AE90" stroke-width="6" stroke-dasharray="11 9" stroke-linecap="round" />
+    </g>
+  </g>
+  <rect width="1000" height="1250" fill="url(#vignette)" />
+  <rect width="1000" height="1250" filter="url(#grain)" opacity="0.65" style="mix-blend-mode:multiply" />
+</svg>

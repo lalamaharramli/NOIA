@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img">
+  
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+        <stop offset="0%" stop-color="#F9F3EA" />
+        <stop offset="100%" stop-color="#EBDFCC" />
+      </linearGradient>
+      <radialGradient id="glow" cx="35%" cy="22%" r="70%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55" />
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="vignette" cx="50%" cy="50%" r="72%">
+        <stop offset="55%" stop-color="#6B4B33" stop-opacity="0" />
+        <stop offset="100%" stop-color="#6B4B33" stop-opacity="0.12" />
+      </radialGradient>
+      <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+        <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#5A4231" flood-opacity="0.18" />
+      </filter>
+      <filter id="grain">
+        <feTurbulence type="fractalNoise" baseFrequency="0.86" numOctaves="3" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.055" />
+        </feComponentTransfer>
+      </filter>
+    </defs>
+  <rect width="1000" height="1250" fill="url(#bg)" />
+  <rect width="1000" height="1250" fill="url(#glow)" />
+  <circle cx="500" cy="610" r="395" fill="#F3E7D7" opacity="0.35" />
+  <circle cx="500" cy="610" r="395" fill="none" stroke="#D3B7A3" stroke-width="1.5" opacity="0.18" stroke-dasharray="11 9" stroke-linecap="round" />
+  <g transform="translate(500 610) translate(-20 -40) scale(1.55)" filter="url(#softShadow)">
+    
+    <g>
+      <ellipse cx="-62" cy="-300" rx="46" ry="132" transform="rotate(-11 -62 -300)" fill="#F3E7D7" stroke="#D3B7A3" stroke-width="8" />
+      <ellipse cx="62" cy="-300" rx="46" ry="132" transform="rotate(11 62 -300)" fill="#F3E7D7" stroke="#D3B7A3" stroke-width="8" />
+      <ellipse cx="-62" cy="-304" rx="21" ry="94" transform="rotate(-11 -62 -304)" fill="#C49782" opacity="0.6" />
+      <ellipse cx="62" cy="-304" rx="21" ry="94" transform="rotate(11 62 -304)" fill="#C49782" opacity="0.6" />
+      <ellipse cx="0" cy="156" rx="158" ry="184" fill="#F3E7D7" stroke="#D3B7A3" stroke-width="8" />
+      <ellipse cx="-158" cy="132" rx="46" ry="86" transform="rotate(24 -158 132)" fill="#F3E7D7" stroke="#D3B7A3" stroke-width="8" />
+      <ellipse cx="158" cy="132" rx="46" ry="86" transform="rotate(-24 158 132)" fill="#F3E7D7" stroke="#D3B7A3" stroke-width="8" />
+      <circle cx="0" cy="-92" r="142" fill="#F3E7D7" stroke="#D3B7A3" stroke-width="8" />
+      <ellipse cx="0" cy="214" rx="96" ry="74" fill="#E9D6C4" opacity="0.55" />
+      <circle cx="-52" cy="-112" r="9" fill="#6E5545" />
+      <circle cx="52" cy="-112" r="9" fill="#6E5545" />
+      <path d="M -16 -78 Q 0 -66 16 -78" fill="none" stroke="#6E5545" stroke-width="5" stroke-linecap="round" />
+      <circle cx="0" cy="-86" r="7" fill="#C49782" />
+      <path d="M 0 -34 L 0 30" stroke="#D3B7A3" stroke-width="3" opacity="0.4" stroke-dasharray="6 9" stroke-linecap="round" />
+      <path d="M -130 168 Q 0 196 130 168" fill="none" stroke="#D3B7A3" stroke-width="3" opacity="0.3" stroke-dasharray="6 10" />
+    </g>
+  </g>
+  <rect width="1000" height="1250" fill="url(#vignette)" />
+  <rect width="1000" height="1250" filter="url(#grain)" opacity="0.65" style="mix-blend-mode:multiply" />
+</svg>
